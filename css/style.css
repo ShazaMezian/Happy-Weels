@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sideColumn{
+    background-color: black;
+}
+
+.middleCol{
+    text-align: center;
+    height: 900px;
+}
