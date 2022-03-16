@@ -51,7 +51,9 @@ body {
 .text-larg {
     font-size: 20px;
 }
-
+.bg-whit{
+    background-color: white;
+}
 .button1{
     border-radius: 30px;
     color: white;
