@@ -10,8 +10,8 @@ body {
     background-color: white;
 }
 .mobile{
-    height: 800px;
-    width: 420px;
+    height: 812px;
+    width: 375px;
 }
 
 .middleCol{
@@ -79,6 +79,17 @@ button{
 }
 .count-div{
     border-radius: 15px;
-    background-color: #505ae5;
+    box-shadow: 0px 4px 15px 0px rgba(80, 90, 229, .2);
+}
+
+.inactive-button{
+    color: #ABF0FF;
+    background-color: #DEF9FF;
+    border: 1px solid #ABF0FF;
+}
+.active-button{
+    color: white;
+    background-color: #4BDDFF;
+    border: 1px solid #4BDDFF;
 }
 

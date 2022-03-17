@@ -49,41 +49,54 @@
             </div>
         </div>
         <div class="container page-content">
-            <div class="row text-center d-flex align-items-center justify-content-center" style="height:40%">
-                <div class="count-div row" style="width:55%;height:100%;padding:30px 0px 40px 10px;">
+            <div class="row text-center" style="height:40%">
+                <div class="count-div  bg-white row" style="width:243px;height:113px;padding-top: 25px;margin: 0 auto;">
                     <div class="col  pt-2">
-                        <button onclick="count(-1)" class="rounded-circle bg-white  d-flex align-items-center justify-content-center"
+                        <button id="minus-button" onclick="count(-1)" class="inactive-button rounded-circle"
                             style="width:41px; height: 41px;">
                             <i class="fa-solid fa-minus"></i>
                         </button>
                     </div>
                     <div class="col">
-                        <div class="row ">
-                            <div class="rounded-3" style="background-color: #DEF9FF;width:56px; height: 56px;">
-                                <p id="count" style="color: #505ae5;font-size: 40px;">0</p>
+                        <div>
+                            <div
+                                style="background-color: white;width:56px;padding-bottom: 30px; height: 56px;border: 1px solid #BDBEC2;border-radius: 15px;">
+                                <p id="count" style="color: #505ae5;font-size: 30px;margin-top: 4px;">0</p>
                             </div>
                         </div>
-                        <div class="row" style="padding:0px 0px 0px 0px;color: white;">minutes</div>
-
-
+                        <div style="padding:0px 0px 0px 0px;color: #BDBEC2; font-size: 15px;">minutes</div>
                     </div>
                     <div class="col pt-2">
-                        <button onclick="count(1)"
-                            class="rounded-circle bg-white  d-flex align-items-center justify-content-center"
-                            style="width:41px; height: 41px;">
+                        <button onclick="count(1)" class="rounded-circle active-button"
+                            style="width:41px; height: 41px;padding: auto 0;">
                             <i class="fa-solid fa-plus"></i>
                         </button>
                     </div>
                 </div>
 
             </div>
-            <div class="row text-center" style="height:60%">
-                <p>asd</p>
+            <div class="row" style="height:60%;">
+                <div style="margin: 0 auto;width: 70%;padding-top: 30px;">
+                <div  class="row" style="color: #51668a;" >
+                    <div class="col">
+                        <div onclick="toggleMorning()" class="count-div  bg-white row" style="width:106px;height:96px;position: relative;">
+                            <img style="height:34px;width:58px;position: absolute;margin-top: -15px;margin-left: 24px;" src="images/Icons/morning-bus.png"/>
+                            <div style="padding-top: 32px;text-align: center;">Morning Bus</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div onclick="toggleAfternoon()" class="count-div  bg-white row" style="width:106px;height:96px;margin-left: 9px;position: relative;">
+                            <img id="afternoon" style="height:34px;width:58px;position: absolute;margin-top: -15px;margin-left: 24px;"  src="images/Icons/afternoon-bus.png"/>
+                            <div style="padding-top: 32px;text-align: center;">Afternoon Bus</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
         <div class="container page-buttons px-5 text-medium">
             <div class="row text-center mx-auto">
-                <button class="button1" onclick="location.href='alert-confirmation.html';" >Set Alert</button>
+                <button class="button1" onclick="location.href='alert-confirmation.html';">Set Alert</button>
             </div>
         </div>
         <div class="container page-footer ">
@@ -117,11 +130,23 @@
 <script>
     function count(number) {
         var count = parseInt(document.getElementById("count").innerHTML);
-        count +=parseInt(number)
-        if(count>=0)
-        {
-         document.getElementById("count").innerHTML = count;
+        count += parseInt(number)
+        if (count >= 0) {
+            document.getElementById("count").innerHTML = count;
+            if (count > 0) {
+                $("#minus-button").removeClass("inactive-button");
+                $("#minus-button").addClass("active-button");
+            }
+            else {
+                $("#minus-button").addClass("inactive-button");
+                $("#minus-button").removeClass("active-button");
+            }
         }
+    }
+
+    function toggleMorning(){
+        console.log($('#afternoon').attr('src'));
+        $('#afternoon').attr('src','images/Icons/morning-bus.png');
     }
 </script>
 
