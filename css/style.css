@@ -1,5 +1,6 @@
-body {
+.body {
     font-family: 'Mulish', sans-serif;
+    cursor: url('../images/Icons/mobile-cursor.png') 10 12;
 }
 
 .black{
