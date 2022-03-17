@@ -1,9 +1,17 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Mulish', sans-serif;
 }
 
-.sideColumn{
+.black{
     background-color: black;
+}
+
+.white{
+    background-color: white;
+}
+.mobile{
+    height: 800px;
+    width: 420px;
 }
 
 .middleCol{
@@ -14,3 +22,61 @@ body {
 .navBar{
     border: solid 1px gray;
 }
+
+.margin {
+    margin: 2% auto;
+}
+
+.mobile-header{
+    height: 5%
+}
+.page-header{
+    height: 20%;
+    color: #00CFFF;
+}
+.page-content{
+    height: 40%;
+    color: #7b8794;
+}
+.page-buttons{
+    height: 20%;
+}
+.page-footer{
+    height: 15%;
+}
+.text-small{
+    font-size: 10px;
+}
+
+.text-larg {
+    font-size: 20px;
+}
+
+.button1{
+    border-radius: 30px;
+    color: white;
+    background-color: #d67033;
+    border: none;
+}
+.button2{
+    border-radius: 30px;
+    color: #505ae5;
+    background-color: white;
+    border: 1px solid #505ae5;
+}
+button{
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    overflow: hidden;
+    perspective: 1px;
+}
+.count-div{
+    border-radius: 15px;
+    background-color: #505ae5;
+}
+
