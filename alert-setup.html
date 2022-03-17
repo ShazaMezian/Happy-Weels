@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
 </head>
 
@@ -25,7 +25,7 @@
         <div class="container mobile-header ">
             <div class="row">
                 <div class="col">
-                    9:41
+                    8:30
                 </div>
                 <div class="col text-end">
                     <img src="images/Icons/connection.png" />
@@ -34,16 +34,21 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <i class="fa-solid fa-angle-left"></i> &nbsp;Profile
+        <div class="container" style="color: #7B8794;">
+            <div class="row">
+                <div class="col-4">
+                    <i class="fa-solid fa-angle-left fa-xl"></i>
+                </div>
+                <div class="col">
+                    <p style="font-size: 23px;font-weight: 300;margin-left: 15px;">Alerts</p>
+                </div>
+            </div>
         </div>
         <div class="container page-header">
-            <div class="row text-center mt-3">
-                <h1>Alerts</h1>
-            </div>
-            <div class="row px-5">
+
+            <div class="row px-4"  style="padding-top: 22px;">
                 <div class="col-3 text-end"> <img src="images/Icons/alerts-page-icon.png" /></div>
-                <div class="col text-small py-1" style="color:#505ae5;"> Set an alert to let you know when the bus is
+                <div class="col py-1" style="color:#51668a;font-size: 12px;"> Set an alert to let you know when the bus is
                     close by so you leave
                     your house just in time.</div>
             </div>
@@ -53,9 +58,9 @@
                 <div class="count-div  bg-white row" style="width:243px;height:113px;padding-top: 25px;margin: 0 auto;">
                     <div class="col  pt-2">
                         <div id="minus-button" onclick="count(-1)" class="inactive-button rounded-circle"
-                            style="width:41px; height: 41px;">
+                            style="width:41px; height: 41px;padding-top: 9px;padding-left: 2px;">
                             <i class="fa-solid fa-minus"></i>
-                    </div>
+                        </div>
                     </div>
                     <div class="col">
                         <div>
@@ -68,7 +73,7 @@
                     </div>
                     <div class="col pt-2">
                         <div onclick="count(1)" class="rounded-circle active-button"
-                            style="width:41px; height: 41px;padding: auto 0;">
+                            style="width:41px; height: 41px;padding-top: 9px;padding-left: 2px;">
                             <i class="fa-solid fa-plus"></i>
                         </div>
                     </div>
@@ -77,21 +82,27 @@
             </div>
             <div class="row" style="height:60%;">
                 <div style="margin: 0 auto;width: 70%;padding-top: 30px;">
-                <div  class="row" style="color: #51668a;" >
-                    <div class="col">
-                        <div onclick="toggleMorning()" id="morning-div" class="count-div row" style="width:106px;height:96px;position: relative;">
-                            <img id="morning-img" style="height:34px;width:58px;position: absolute;margin-top: -15px;margin-left: 24px;" src="images/Icons/morning-bus.png"/>
-                            <div style="padding-top: 32px;text-align: center;">Morning Bus</div>
+                    <div class="row" style="color: #51668a;">
+                        <div class="col">
+                            <div onclick="toggleMorning()" id="morning-div" class="count-div row"
+                                style="width:106px;height:96px;position: relative;">
+                                <img id="morning-img"
+                                    style="height:34px;width:58px;position: absolute;margin-top: -15px;margin-left: 24px;"
+                                    src="images/Icons/morning-bus.png" />
+                                <div style="padding-top: 32px;text-align: center;font-weight: 600;">Morning Bus</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div onclick="toggleAfternoon()" id="afternoon-div" class="count-div row" style="width:106px;height:96px;margin-left: 9px;position: relative;">
-                            <img id="afternoon-img" style="height:34px;width:58px;position: absolute;margin-top: -15px;margin-left: 24px;"  src="images/Icons/afternoon-bus.png"/>
-                            <div style="padding-top: 32px;text-align: center;">Afternoon Bus</div>
+                        <div class="col">
+                            <div onclick="toggleAfternoon()" id="afternoon-div" class="count-div row"
+                                style="width:106px;height:96px;margin-left: 9px;position: relative;">
+                                <img id="afternoon-img"
+                                    style="height:34px;width:58px;position: absolute;margin-top: -15px;margin-left: 24px;"
+                                    src="images/Icons/afternoon-bus.png" />
+                                <div style="padding-top: 32px;text-align: center;font-weight: 600;">Afternoon Bus</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
             </div>
         </div>
         <div class="container page-buttons px-5 text-medium">
@@ -99,7 +110,7 @@
                 <div class="button1" onclick="location.href='alert-confirmation.html';">Set Alert</div>
             </div>
         </div>
-        <div class="container page-footer ">
+        <div class="container page-footer">
             <div class="row text-center">
                 <div class="col">
                     <div><img style="width:22.94px;height: 21.94px;" src="images/Icons/home-menu-icon.png" /></div>
@@ -144,31 +155,29 @@
         }
     }
 
-    function toggleMorning(){
-        if($('#morning-img').attr('src').indexOf("selected")>0){
-            $('#morning-img').attr('src','images/Icons/morning-bus.png');
-            $('#morning-div').css('background-color','white')
-            $('#morning-div').css('color','#51668a')
-        }else
-        {
-            $('#morning-img').attr('src','images/Icons/morning-bus-selected.png');
-            $('#morning-div').css('background-color','#505ae5')
-            $('#morning-div').css('color','white')
+    function toggleMorning() {
+        if ($('#morning-img').attr('src').indexOf("selected") > 0) {
+            $('#morning-img').attr('src', 'images/Icons/morning-bus.png');
+            $('#morning-div').css('background-color', 'white')
+            $('#morning-div').css('color', '#51668a')
+        } else {
+            $('#morning-img').attr('src', 'images/Icons/morning-bus-selected.png');
+            $('#morning-div').css('background-color', '#505ae5')
+            $('#morning-div').css('color', 'white')
         }
-    
+
     }
-    function toggleAfternoon(){
-        if($('#afternoon-img').attr('src').indexOf("selected")>0){
-            $('#afternoon-img').attr('src','images/Icons/afternoon-bus.png');
-            $('#afternoon-div').css('background-color','white')
-            $('#afternoon-div').css('color','#51668a')
-        }else
-        {
-            $('#afternoon-img').attr('src','images/Icons/afternoon-bus-selected.png');
-            $('#afternoon-div').css('background-color','#505ae5')
-            $('#afternoon-div').css('color','white')
+    function toggleAfternoon() {
+        if ($('#afternoon-img').attr('src').indexOf("selected") > 0) {
+            $('#afternoon-img').attr('src', 'images/Icons/afternoon-bus.png');
+            $('#afternoon-div').css('background-color', 'white')
+            $('#afternoon-div').css('color', '#51668a')
+        } else {
+            $('#afternoon-img').attr('src', 'images/Icons/afternoon-bus-selected.png');
+            $('#afternoon-div').css('background-color', '#505ae5')
+            $('#afternoon-div').css('color', 'white')
         }
-    
+
     }
 </script>
 

@@ -1,6 +1,6 @@
 .body {
-    font-family: 'Mulish', sans-serif;
-    cursor: url(../images/Icons/mobile-cursor.svg),auto;
+    font-family: 'Poppins', sans-serif;
+    cursor: url(../images/Icons/mobile-cursor-v2.svg),auto;
 }
 
 .black{
@@ -8,7 +8,7 @@
 }
 
 .white{
-    background-color: white;
+    background-color: #f4f4f4;
 }
 .mobile{
     height: 812px;
@@ -43,7 +43,10 @@
     height: 20%;
 }
 .page-footer{
-    height: 15%;
+    padding-top: 12px;
+    height: 9%;
+    background-color: white;
+    
 }
 .text-small{
     font-size: 10px;
