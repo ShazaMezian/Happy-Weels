@@ -44,99 +44,127 @@
                 </div>
             </div>
         </div>
-        <div class="container page-header">
-            <div class="row px-4"  style="padding-top: 22px;">
+        <div class="container page-header" style="height: 13%;">
+            <div class="row px-4" style="padding-top: 22px;">
                 <div class="col-3 text-end"> <img src="images/Icons/alerts-page-icon.png" /></div>
-                <div class="col py-1" style="color:#51668a;font-size: 12px;"> Set an alert to let you know when the bus is
+                <div class="col py-1" style="color:#51668a;font-size: 12px;"> Set an alert to let you know when the bus
+                    is
                     close by so you leave your house just in time.</div>
             </div>
         </div>
-        <div class="container confirmation-page-content">
-            <div class="row text-center" style="height:33%">
-                <div class="confirmation-div" style="width:344px; height:82px; padding-top:25px;">
-                    <div class="col">
-                        <div class="rounded-circle"
+        <div class="container confirmation-page-content" style="height: 45%;">
+            <div class="row" style="height:27%">
+                <div class="confirmation-div row" style="width:344px; height:82px; margin: 0 auto;">
+                    <div class="col-1" style="padding-top:15px;">
+                        <div class="rounded-circle text-center"
                             style="width:30px; height: 30px; padding-top: 3px; background-color: #4BB49A; color: white;">
                             <i class="fa-solid fa-check"></i>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-10" style="padding-left:24px;">
+                        <p style="color: black; font-size:22px; font-weight: 700;padding-top:13px; margin-bottom: 0px;">
+                            Congratulations! </p>
+
+                        <p style="color: #76BB80; font-size:16px; margin-top:0px; font-weight: 300;">Alert
+                            was successfully added</p>
+
+                    </div>
+                    <div class="col-1" style="padding-top:8px;">
+                        <div>
+                            <i class="fa-solid fa-xmark fa-s" style="color:#989ea3; "></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        
+        <div class="row text-center" style="height:40%">
+            <div class="count-div  bg-white row" style="width:345px; height:89px; padding-top:25px; margin: 0 auto;">
+                <div class="col-2 ">
+                    <div class="active-button rounded-circle"
+                        style="width:41px; height: 41px; padding-top:9px; padding-left:2px;">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div>
+                        <p id="count" style="color: #505ae5; font-size:30px; margin-top:0px; font-weight: 700;">Alert 1
+                        </p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="container">
                         <div class="row">
-                            <div class="col">
-                            <p id="count" style="color: black; font-size:22px; margin-top:0px; font-weight: 700;">Congratulations!</p>
+                            <div class="col-2">
+                                <img id="morning-img" style="height:34px;width:34px; margin-top: -15px;"
+                                src="images/Icons/morning-bus.png" />
+                            </div>
+                            <div class="col-4">
+                                <div style="color: #505ae5; font-size: 38px; font-weight: 400; padding-left:15px; margin-top: -9px;">
+                                    5
+                                </div>
+                                <div style="color: #505ae5; font-size: 15px; margin-top: -15px; margin-left: -2px;">
+                                    minutes
+                                </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col">
-                            <p id="count" style="color: #76BB80; font-size:22px; margin-top:0px; font-weight: 700;">Alert was successfully added</p>
-                        </div>
-                        </div>
+                                <div style="padding:0px 0px 0px 0px;color: #505ae5; font-size: 15px;">
+                                    minutes
+                                </div>
+                            </div>
+                        </div> -->
+
                     </div>
                     
+                   
                 </div>
 
             </div>
-            <div class="row text-center" style="height:40%">
-                <div class="count-div  bg-white row" style="width:345px; height:89px; padding-top:25px; margin: 0 auto;">
-                    <div class="col-2 ">
-                        <div class="active-button rounded-circle"
-                            style="width:41px; height: 41px; padding-top:9px; padding-left:2px;">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                    </div>
-                    <div class="col-5">
-                        <div>
-                            <p id="count" style="color: #505ae5; font-size:30px; margin-top:0px; font-weight: 700;">Alert 1</p>
-                        </div>
-                    </div>
-                    <div class="col pt-2">
-                        <img id="morning-img" style="height:34px;width:34px; margin-top: -15px;margin-left: 24px;"
-                                    src="images/Icons/morning-bus.png" />
-                        <div style="padding:0px 0px 0px 0px;color: #505ae5; font-size: 34px; font-weight: 500;">
-                            5
-                        </div>
-                        <div style="padding:0px 0px 0px 0px;color: #505ae5; font-size: 15px;">
-                            minutes
-                        </div>
-                    </div>
-                    
-                </div>
 
-            </div>
         </div>
-        <div class="container page-buttons px-5 text-medium">
-            <div class="row text-center my-3">
-               <button class="button1" onclick="location.href='alert-setup.html';" >Add Alert</button>
-            </div>
-            <div class="row text-center">
-                <button class="button2" >Edit Alert &nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i></button>
-             </div>
+        
+    </div>
+    <div class="container page-buttons px-5 text-medium">
+        <div class="row text-center my-3">
+            <button class="button1" onclick="location.href='alert-setup.html';">Add Alert</button>
         </div>
-        <div class="container page-footer">
-            <div class="row text-center">
-                <div class="col">
-                    <div><img style="width:23.94px;height: 22.94px;margin-top: 12px;" src="images/Icons/home-menu-icon.png" /></div>
-                    <div class="text-small my-2" style="font-weight: 300;">Home</div>
+        <div class="row text-center">
+            <button class="button2">Edit Alert &nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i></button>
+        </div>
+    </div>
+    <div class="container page-footer">
+        <div class="row text-center">
+            <div class="col">
+                <div><img style="width:23.94px;height: 22.94px;margin-top: 12px;"
+                        src="images/Icons/home-menu-icon.png" /></div>
+                <div class="text-small my-2" style="font-weight: 300;">Home</div>
+            </div>
+            <div class="col">
+                <div><img style="width:20px;height: 24px;margin-top: 12px;" src="images/Icons/routes-menu-icon.png" />
                 </div>
-                <div class="col">
-                    <div><img style="width:20px;height: 24px;margin-top: 12px;" src="images/Icons/routes-menu-icon.png" /></div>
-                    <div class="text-small my-2" style="font-weight: 300;">Routes</div>
+                <div class="text-small my-2" style="font-weight: 300;">Routes</div>
+            </div>
+            <div class="col">
+                <div><img style="width:19.5px;height: 24.5px;margin-top: 11px;"
+                        src="images/Icons/notification-menu-icon.png" /></div>
+                <div class="text-small my-2" style="font-weight: 300;">Notifications</div>
+            </div>
+            <div class="col">
+                <div><img style="width:21.5px;height: 24.5px;margin-top: 12px;"
+                        src="images/Icons/alert-menu-icon.png" /></div>
+                <div class="text-small my-2" style="font-weight: 300;">Alerts</div>
+            </div>
+            <div class="col">
+                <div><img style="width:36px;height: 36px; margin-top: 6px;" src="images/Icons/profile-menu-icon.png" />
                 </div>
-                <div class="col">
-                    <div><img style="width:19.5px;height: 24.5px;margin-top: 11px;" src="images/Icons/notification-menu-icon.png" /></div>
-                    <div class="text-small my-2" style="font-weight: 300;">Notifications</div>
-                </div>
-                <div class="col">
-                    <div><img style="width:21.5px;height: 24.5px;margin-top: 12px;" src="images/Icons/alert-menu-icon.png" /></div>
-                    <div class="text-small my-2" style="font-weight: 300;">Alerts</div>
-                </div>
-                <div class="col">
-                    <div><img style="width:36px;height: 36px; margin-top: 6px;" src="images/Icons/profile-menu-icon.png" /></div>
-                    <div class="text-small" style="margin-top: 2px; font-weight: 600; color: #505ae5;text-decoration: underline;
+                <div class="text-small" style="margin-top: 2px; font-weight: 600; color: #505ae5;text-decoration: underline;
                     text-decoration-color: #4BDDFF;">Profile</div>
-                </div>
             </div>
         </div>
+    </div>
     </div>
 
 
