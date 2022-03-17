@@ -62,10 +62,10 @@
                         </div>
                     </div>
                     <div class="col-10" style="padding-left:24px;">
-                        <p style="color: black; font-size:22px; font-weight: 700;padding-top:13px; margin-bottom: 0px;">
+                        <p style="color: black; font-size:18px; font-weight: 700;padding-top:13px; margin-bottom: 0px;">
                             Congratulations! </p>
 
-                        <p style="color: #76BB80; font-size:16px; margin-top:0px; font-weight: 300;">Alert
+                        <p style="color: #5d9c67; font-size:15px; margin-top:0px; font-weight: 300;">Alert
                             was successfully added</p>
 
                     </div>
@@ -170,47 +170,5 @@
 
 
 </body>
-<script>
-    function count(number) {
-        var count = parseInt(document.getElementById("count").innerHTML);
-        count += parseInt(number)
-        if (count >= 0) {
-            document.getElementById("count").innerHTML = count;
-            if (count > 0) {
-                $("#minus-button").removeClass("inactive-button");
-                $("#minus-button").addClass("active-button");
-            }
-            else {
-                $("#minus-button").addClass("inactive-button");
-                $("#minus-button").removeClass("active-button");
-            }
-        }
-    }
-
-    function toggleMorning() {
-        if ($('#morning-img').attr('src').indexOf("selected") > 0) {
-            $('#morning-img').attr('src', 'images/Icons/morning-bus.png');
-            $('#morning-div').css('background-color', 'white')
-            $('#morning-div').css('color', '#51668a')
-        } else {
-            $('#morning-img').attr('src', 'images/Icons/morning-bus-selected.png');
-            $('#morning-div').css('background-color', '#505ae5')
-            $('#morning-div').css('color', 'white')
-        }
-
-    }
-    function toggleAfternoon() {
-        if ($('#afternoon-img').attr('src').indexOf("selected") > 0) {
-            $('#afternoon-img').attr('src', 'images/Icons/afternoon-bus.png');
-            $('#afternoon-div').css('background-color', 'white')
-            $('#afternoon-div').css('color', '#51668a')
-        } else {
-            $('#afternoon-img').attr('src', 'images/Icons/afternoon-bus-selected.png');
-            $('#afternoon-div').css('background-color', '#505ae5')
-            $('#afternoon-div').css('color', 'white')
-        }
-
-    }
-</script>
 
 </html>
