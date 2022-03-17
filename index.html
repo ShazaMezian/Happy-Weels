@@ -14,18 +14,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
 </head>
 
-<body class="black">
+<body class="black body">
 
     <!-- Middle Column -->
     <div class="white mobile margin rounded-2 px-3 py-1">
         <div class="container mobile-header ">
             <div class="row">
-                <div class="col">
-                    9:41
+                <div class="col" style="color: #505ae5;">
+                    8:30
                 </div>
                 <div class="col text-end">
                     <img src="images/Icons/connection.png" />
@@ -34,55 +34,58 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <i class="fa-solid fa-angle-left"></i> &nbsp;Profile
+        <div class="container" style="color: #7B8794;">
+            <div class="row">
+                <div class="col-4">
+                    <i class="fa-solid fa-angle-left fa-xl"></i>
+                </div>
+                <div class="col">
+                    <p style="font-size: 23px;font-weight: 300;margin-left: 15px;">Alerts</p>
+                </div>
+            </div>
         </div>
         <div class="container page-header">
-            <div class="row text-center mt-3">
-                <h1>Alerts</h1>
-            </div>
-            <div class="row px-5">
+
+            <div class="row px-4"  style="padding-top: 22px;">
                 <div class="col-3 text-end"> <img src="images/Icons/alerts-page-icon.png" /></div>
-                <div class="col text-small py-1" style="color:#505ae5;"> Set an alert to let you know when the bus is close by so you leave
+                <div class="col py-1" style="color:#51668a;font-size: 12px;"> Set an alert to let you know when the bus is
+                    close by so you leave
                     your house just in time.</div>
             </div>
         </div>
-        <div class="container page-content d-flex align-items-center">
-            <div class="row text-center text-small ">
+        <div class="container page-content">
+            <div class="row text-center text-small" style="padding-top:70px;">
                 <p>There are currently no Alerts Set Up for this Account.</p>
                 <p>Tap “ADD ALERT” to get started.</p>
             </div>
         </div>
-
         <div class="container page-buttons px-5 text-medium">
-            <div class="row text-center my-3">
-               <button class="button1" onclick="location.href='alert-setup.html';" >Add Alert</button>
+            <div class="row text-center mx-auto">
+                <div class="button1" onclick="location.href='alert-setup.html';">Add Alert</div>
             </div>
-            <div class="row text-center">
-                <button class="button2" >Edit Alert &nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i></button>
-             </div>
         </div>
-        <div class="container page-footer ">
+        <div class="container page-footer">
             <div class="row text-center">
                 <div class="col">
-                    <div><img style="width:22.94px;height: 21.94px;" src="images/Icons/home-menu-icon.png" /></div>
-                    <div class="text-small my-2">Home</div>
+                    <div><img style="width:23.94px;height: 22.94px;margin-top: 12px;" src="images/Icons/home-menu-icon.png" /></div>
+                    <div class="text-small my-2" style="font-weight: 300;">Home</div>
                 </div>
                 <div class="col">
-                    <div><img style="width:20px;height: 24px;" src="images/Icons/routes-menu-icon.png" /></div>
-                    <div class="text-small my-2">Routes</div>
+                    <div><img style="width:20px;height: 24px;margin-top: 12px;" src="images/Icons/routes-menu-icon.png" /></div>
+                    <div class="text-small my-2" style="font-weight: 300;">Routes</div>
                 </div>
                 <div class="col">
-                    <div><img  src="images/Icons/notification-menu-icon.png" /></div>
-                    <div class="text-small my-2">Notifications</div>
+                    <div><img style="margin-top: 10px;" src="images/Icons/notification-menu-icon.png" /></div>
+                    <div class="text-small my-2" style="font-weight: 300;">Notifications</div>
                 </div>
                 <div class="col">
-                    <div><img style="width:21.5px;height: 24.5px;" src="images/Icons/alert-menu-icon.png" /></div>
-                    <div class="text-small my-2">Alerts</div>
+                    <div><img style="width:21.5px;height: 24.5px;margin-top: 12px;" src="images/Icons/alert-menu-icon.png" /></div>
+                    <div class="text-small my-2" style="font-weight: 300;">Alerts</div>
                 </div>
                 <div class="col">
-                    <div ><img  style="width:34px;height: 34px;" src="images/Icons/profile-menu-icon.png" /></div>
-                    <div class="text-small m-0 p-0">Profile</div>
+                    <div><img style="width:36px;height: 36px; margin-top: 6px;" src="images/Icons/profile-menu-icon.png" /></div>
+                    <div class="text-small" style="margin-top: 2px; font-weight: 600; color: #505ae5;text-decoration: underline;
+                    text-decoration-color: #4BDDFF;">Profile</div>
                 </div>
             </div>
         </div>
@@ -90,6 +93,6 @@
 
 
 </body>
-<script src="js/index.js"></script>
+
 
 </html>
