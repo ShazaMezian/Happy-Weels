@@ -1,6 +1,6 @@
 .body {
     font-family: 'Mulish', sans-serif;
-    cursor: url('../images/Icons/mobile-cursor.png') 10 12;
+    cursor: url(../images/Icons/mobile-cursor.svg),auto;
 }
 
 .black{
@@ -60,12 +60,28 @@
     color: white;
     background-color: #d67033;
     border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    overflow: hidden;
+    perspective: 1px;
 }
 .button2{
     border-radius: 30px;
     color: #505ae5;
     background-color: white;
     border: 1px solid #505ae5;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    overflow: hidden;
+    perspective: 1px;
 }
 button{
     border-radius: 15px;
